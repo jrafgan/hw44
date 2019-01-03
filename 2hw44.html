@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 42</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"
+            type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js" type="text/javascript"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css"
+          media="screen"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          type="text/css" media="screen"/>
+
+    <link rel="stylesheet" href="hw44style.css">
+    <script src="2hw44.js"></script>
+</head>
+<body>
+<div>
+    <input id="country-name" type="text"/>
+    <button id="show">Найти страну</button>
+    <div class="grid-container">
+        <div class="main-info">
+
+            <div class="key"><p><b>Название: </b></p></div>
+            <div class="value"><p id="name"></p></div>
+            <div class="key"><p><b>Регион: </b></p></div>
+            <div class="value"><p id="region"></p></div>
+            <div class="key"><p><b>Субрегион: </b></p></div>
+            <div class="value"><p id="subregion"></p></div>
+            <div class="key"><p><b>Столица: </b></p></div>
+            <div class="value"><p id="capital"></p></div>
+
+        </div>
+
+        <div class="flag"><span><b>Флаг: </b></span><img id="flag" alt=""></div>
+        <div class="extra-info">
+            <button id="show-extra">Полная информация</button>
+            <div id="ul_1"></div>
+        </div>
+        <div class="map">
+            <div id="mapid"></div>
+        </div>
+    </div>
+</div>
+<div id="preLoader"></div>
+</body>
+</html>
