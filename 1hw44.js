@@ -13,9 +13,10 @@ $(function () {
         return $.ajax({
             method: 'GET',
             url: 'https://restcountries.eu/rest/v2/name/' + url
-        })}
+        })};
 
     $('#show').on('click', function (event) {
+        var url = $('#country-name').val();
         request(url).then(function (response) {
             country1 = response[0];
             return response[0].borders
